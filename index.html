@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css">
 
@@ -38,14 +44,31 @@
 
             <div class="container__right">
 
-                <div class="card__container">
+                <div class="card-box__container">
 
                     <div class="card-box framed" id="computer-cards">
     
                     </div>
     
-                    <div class="card-versus">
-
+                    <div class="card-versus__container">
+                        <div class="versus-top">
+                            <div class="card-infield">
+                                <img id="player-field-card"
+                                height="180px" width="125px">
+                            </div>
+                            <img height="100px" src="./src/assets/icons/millenium2.png" alt="millenium2">
+                            <div class="card-infield">
+                                <img id="computer-field-card"
+                                height="180px" width="125px">
+                            </div>
+                        </div>
+                        <div class="versus-bottom">
+                            <button
+                            id="next-duel" 
+                            class="rpgui-button"
+                            onclick="resetDuel()"
+                            >GANHOU</button>
+                        </div>
 
                     </div>
     
